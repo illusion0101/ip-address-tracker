@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property='og:title'  content='IP Address Tracker'>
+    <meta name='twitter:title' content='IP Address Tracker'>
+    <meta property='og:url'  content='https://illusion0101.github.io/ip-address-tracker/'>
+    <meta name='twitter:url' content='https://illusion0101.github.io/ip-address-tracker/'>
+    <meta name='description'         content="An IP Address Tracker made with HTML-CSS-JS">
+    <meta property='og:description'  content="An IP Address Tracker made with HTML-CSS-JS">
+    <meta name='twitter:description' content="An IP Address Tracker made with HTML-CSS-JS">
+    <meta property="og:image"  content="https://illusion0101.github.io/ip-address-tracker/images/icon.png">
+    <meta name="twitter:image" content="https://illusion0101.github.io/ip-address-tracker/images/icon.png">
+    <title>IP Address Tracker</title>
+    <link rel="icon" href="./images/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+    
+    <!-- leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js" integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ==" crossorigin=""></script>
+</head>
+<body>
+    <div class="background">
+        <div class="heading">IP Address Tracker</div>
+        <div class="search-bar">
+            <input class="search-text" type="text" name="" id="" placeholder="Search for any IP address or domain">
+            <a href="javascript:searchData();" class="search-button"><img src="./images/icon-arrow.svg" alt=""></a>
+        </div>
+        <div class="empty"></div>
+    </div>
+    <div class="results">
+        <div class="result ip-address">
+            <div class="result-heading">IP ADDRESS</div>
+            <div class="result-text">Lorem ipsum dolor sit amet.</div>
+        </div>
+        <div class="result location">
+            <div class="result-heading">LOCATION</div>
+            <div class="result-text">Lorem ipsum dolor sit amet.</div>
+        </div>
+        <div class="result timezone">
+            <div class="result-heading">TIMEZONE</div>
+            <div class="result-text">Lorem ipsum dolor sit amet.</div>
+        </div>
+        <div class="result isp">
+            <div class="result-heading">ISP</div>
+            <div class="result-text">Lorem ipsum dolor sit amet.</div>
+        </div>
+    </div>
+    <section class="map-box"><div id="map" class="map"></div></section>
+</body>
+</html>
